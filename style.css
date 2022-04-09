@@ -1,0 +1,92 @@
+.container {
+  background-color: rgb(92, 161, 207);
+  box-shadow: 10px 5px 5px #c0c0c0;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-family: "Comfortaa", cursive;
+}
+.row {
+  color: black;
+  border-style: none;
+}
+
+h1 {
+  text-align: center;
+  text-emphasis-style: bold;
+  color: white;
+  padding-top: 5%;
+}
+
+.today {
+  width: 50%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.sunshine {
+  width: 50%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.stats {
+  display: block;
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 10%;
+}
+
+.box {
+  padding: 5% 10%;
+  height: 90%;
+}
+
+.currentCity {
+  font-size: 30px;
+  width: 100%;
+  padding: 50% 0%;
+}
+
+.currentTemp {
+  height: 90%;
+}
+
+.card-img-top {
+  display: block;
+  margin: auto;
+
+  width: 50%;
+  height: auto;
+}
+.fiveDay {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.forecast {
+  padding: 3% 5%;
+}
+.input-group {
+  width: 50%;
+  height: 50%;
+  padding-bottom: 5%;
+}
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+
+  color: white;
+  background-color: rgb(183, 194, 194);
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: rgb(153, 156, 156);
+  transition: all 200ms ease-in-out;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.tempChange {
+  display: inline;
+  font-size: 50%;
+}
