@@ -1,5 +1,6 @@
 .container {
-  background-image: url("Clouds.jpeg");
+  background-image: url("andrea-ferrario-3WgPZbsDSkE-unsplash.jpg");
+  background-size: cover;
   box-shadow: 10px 5px 5px #c0c0c0;
   margin-top: 5%;
   margin-bottom: 10%;
@@ -13,7 +14,7 @@
 h1 {
   text-align: center;
   text-emphasis-style: bold;
-  color: white;
+  color: rgb(141, 188, 203);
   padding-top: 3%;
 }
 
@@ -52,21 +53,9 @@ h1 {
   height: 90%;
 }
 
-.card-img-top {
-  display: block;
-  margin: auto;
-
-  width: 50%;
-  height: auto;
-}
 .fiveDay {
   font-size: larger;
   font-weight: bold;
-  color: black;
-}
-#fiveday:hover {
-  background-color: #ffffff;
-  opacity: 0.6;
   color: black;
 }
 
@@ -75,7 +64,7 @@ h1 {
 }
 
 .forecast {
-  padding: 3% 5%;
+  padding: 2% 4%;
 }
 .input-group {
   width: 50%;
