@@ -1,5 +1,5 @@
 .container {
-  background-color: rgb(92, 161, 207);
+  background-image: url("Clouds.jpeg");
   box-shadow: 10px 5px 5px #c0c0c0;
   margin-top: 5%;
   margin-bottom: 10%;
@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   text-emphasis-style: bold;
   color: white;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .today {
@@ -62,6 +62,16 @@ h1 {
 .fiveDay {
   font-size: larger;
   font-weight: bold;
+  color: black;
+}
+#fiveday:hover {
+  background-color: #ffffff;
+  opacity: 0.6;
+  color: black;
+}
+
+.card {
+  opacity: 0.8;
 }
 
 .forecast {
@@ -70,7 +80,7 @@ h1 {
 .input-group {
   width: 50%;
   height: 50%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 .btn {
   font-size: 15px;
