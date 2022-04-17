@@ -94,3 +94,4 @@ function getPosition(event) {
 
 let currentLocation = document.querySelector("#currentLocation");
 currentLocation.addEventListener("click", getPosition);
+

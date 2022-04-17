@@ -23,6 +23,10 @@ h1 {
   font-size: 25px;
   font-weight: bold;
 }
+.feel {
+  font-size: small;
+  padding-bottom: 5%;
+}
 .sunshine {
   width: 50%;
   display: block;
