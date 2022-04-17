@@ -1,11 +1,17 @@
 .container {
-  background-image: url("andrea-ferrario-3WgPZbsDSkE-unsplash.jpg");
-  background-size: cover;
-  box-shadow: 10px 5px 5px #c0c0c0;
   margin-top: 5%;
   margin-bottom: 10%;
   font-family: "Comfortaa", cursive;
 }
+.weather-app-wrapper {
+  padding-left: 5%;
+  max-width: 600px;
+  margin: 30px auto;
+  background-image: url("andrea-ferrario-3WgPZbsDSkE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .row {
   color: black;
   border-style: none;
@@ -42,11 +48,6 @@ h1 {
   padding-right: 10%;
 }
 
-.box {
-  padding: 5% 10%;
-  height: 90%;
-}
-
 .currentCity {
   font-size: 30px;
   width: 100%;
@@ -62,7 +63,9 @@ h1 {
   font-weight: bold;
   color: black;
 }
-
+.col-2 {
+  margin-left: 2%;
+}
 .card {
   opacity: 0.8;
 }
@@ -76,9 +79,8 @@ h1 {
   padding-bottom: 2%;
 }
 .btn {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
-
   color: white;
   background-color: rgb(183, 194, 194);
   border: 2px solid;
@@ -86,7 +88,6 @@ h1 {
   border-color: rgb(153, 156, 156);
   transition: all 200ms ease-in-out;
   text-align: center;
-  box-shadow: 5px 5px 5px grey;
 }
 
 .tempChange {

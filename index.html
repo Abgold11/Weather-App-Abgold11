@@ -19,9 +19,11 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
       <h1 class="weather">What's The Weather?</h1>
-      <div class="row align-items-start">
-        <div class="col-3">
+      <div class="row">
+        <div class="col-7">
           <div class="today">
             <div class="city" id="city">Be'er Sheva</div>
             <span class= "temperature"> 
@@ -38,7 +40,8 @@
             </div>        
           </div>
         </div>
-        <div class="col-3">
+        
+        <div class="col-4">
           <span><img src="src/Icons/icons8-sun-96.png" alt=""></span>
           <div class="stats">
             <span class="date" id="nowDate" >6/7</span>
@@ -47,42 +50,42 @@
             <div class=" weatherDescription">Sunny</div>            
           </div>       
         </div>
-       
-      </div>
+        </div>
+       </div>
+      
 
       <h4  id="fiveday" >
          5 day forecast
       </h4>
-      <div class="row forecast">
-        <div class="col-5" style="width: 10%;">
-          
+      <div class="row forecast" id="rowForecast">
+        <div class="col-2" >
             <h5 class="card-title">Sunny</h5>
             <p class="card-text">18°C/24°C</p>
             <p class="card-date">7/3</p>
           
         </div>
-        <div class="col-5" style="width: 10%;">
+        <div class="col-2" >
           
             <h5 class="card-title">Sunny</h5>
             <p class="card-text">18°C/24°C</p>
             <p class="card-date">8/3</p>
           
         </div>
-        <div class="col-5" style="width: 10%;">
+        <div class="col-2" >
           
             <h5 class="card-title">Sunny</h5>
             <p class="card-text">18°C/24°C</p>
             <p class="card-date">9/3</p>
           
         </div>
-        <div class="col-5" style="width: 10%;">
+        <div class="col-2" >
           
             <h5 class="card-title">Sunny</h5>
             <p class="card-text">18°C/24°C</p>
             <p class="card-date">10/3</p>
           
         </div>
-        <div class="col-5" style="width: 10%;">
+        <div class="col-2" >
           
             <h5 class="card-title">Sunny</h5>
             <p class="card-text">18°C/24°C</p>
@@ -90,37 +93,21 @@
           
         </div>
       </div>
-      <div class="input-group mb-3">
-       <form id="search-form">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Change City"
-          aria-label="Change City"
-          aria-describedby="button-addon2"
-          id= "city-input"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="submitButton"
-          
-        >
-          Submit
-        </button>
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="currentLocation"
-          
-        >
-          Current Location
-        </button>
-      </div>
+      <div class="input-group">
+  <input 
+  type="text" 
+  class="form-control" 
+  placeholder="Search City" 
+  aria-label="Search City">
+  <button style="width:40%" class="btn btn-outline-secondary" id="submitButton" type="button">Search</button>
+  <button style="width:60%" class="btn btn-outline-secondary" id="currentLocation" type="button">Current Location</button>
+</div>
+      
 
       <footer><a href="https://github.com/Abgold11/Weather-App-Abgold11">Open Sourced by Amanda Lapidot</a></footer>
     </div>
-
+    </div>
+</div>
     <script src="src/script.js"></script>
   </body>
 </html>
