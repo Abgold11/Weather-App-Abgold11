@@ -93,16 +93,38 @@
           
         </div>
       </div>
-      <div class="input-group">
-  <input 
-  type="text" 
-  class="form-control" 
-  placeholder="Search City" 
-  aria-label="Search City">
-  <button style="width:40%" class="btn btn-outline-secondary" id="submitButton" type="button">Search</button>
-  <button style="width:60%" class="btn btn-outline-secondary" id="currentLocation" type="button">Current Location</button>
-</div>
       
+      <div class="input-group mb-3">
+       <form id="search-form" class="mb-3">
+         <div class="row">
+              <div class="col-7">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-200"
+                  id="submitButton"
+                />
+              </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Current Location"
+                  class="btn btn-primary w-100"
+                  id="currentLocation"
+                />
+              </div>
+          </div>            
+       </form>  
+      </div>
 
       <footer><a href="https://github.com/Abgold11/Weather-App-Abgold11">Open Sourced by Amanda Lapidot</a></footer>
     </div>
