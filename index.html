@@ -21,83 +21,71 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-      <h1 class="weather">What's The Weather?</h1>
-      <div class="row">
-        <div class="col-7">
-          <div class="today">
-            <div class="city" id="city">Be'er Sheva</div>
-            <span class= "temperature"> 
-              <span class="current" id="current" >20 </span>  
-              <span class= "tempChange"> 
-                  <span class="celcius" role="button">°C</span>
-                  <span>|</span>
-                  <span class="fahrenheit" role="button">°F</span>
-             </span>  
-            </span>  
-            <div class="feel"> 
-              <div> Humidity: <span>41%</span> </div>
-              <div>Wind: <span>2.68</span>km/h </div>             
-            </div>        
-          </div>
-        </div>
-        
-        <div class="col-4">
-          <span><img src="src/Icons/icons8-sun-96.png" alt=""></span>
-          <div class="stats">
-            <span class="date" id="nowDate" >6/7</span>
-            <span class="time" id = "nowTime" >8:56</span>
-            <div class="highLow">18°C/24°</div>
-            <div class=" weatherDescription">Sunny</div>            
-          </div>       
-        </div>
-        </div>
-       </div>
-      
+          <h1 class="weather">What's The Weather?</h1>
+          <div class="row">
+            <div class="col-4">
+              <div class="today">
+                <div class="city" id="city">Be'er Sheva</div>
+                <span class="temperature">
+                  <span class="current" id="current">20 </span>
+                  <span class="tempChange">
+                    <span class="celcius" role="button">°C</span>
+                    <span>|</span>
+                    <span class="fahrenheit" role="button">°F</span>
+                  </span>
+                </span>
+                <div class="feel">
+                  <div>Humidity: <span id="humidity">41</span>%</div>
+                  <div>Wind: <span id="wind">2.68</span>km/h</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <img id="icon" src="src/Icons/icons8-sun-96.png" alt="" />
+            </div>
 
-      <h4  id="fiveday" >
-         5 day forecast
-      </h4>
-      <div class="row forecast" id="rowForecast">
-        <div class="col-2" >
-            <h5 class="card-title">Sunny</h5>
-            <p class="card-text">18°C/24°C</p>
-            <p class="card-date">7/3</p>
-          
-        </div>
-        <div class="col-2" >
-          
-            <h5 class="card-title">Sunny</h5>
-            <p class="card-text">18°C/24°C</p>
-            <p class="card-date">8/3</p>
-          
-        </div>
-        <div class="col-2" >
-          
-            <h5 class="card-title">Sunny</h5>
-            <p class="card-text">18°C/24°C</p>
-            <p class="card-date">9/3</p>
-          
-        </div>
-        <div class="col-2" >
-          
-            <h5 class="card-title">Sunny</h5>
-            <p class="card-text">18°C/24°C</p>
-            <p class="card-date">10/3</p>
-          
-        </div>
-        <div class="col-2" >
-          
-            <h5 class="card-title">Sunny</h5>
-            <p class="card-text">18°C/24°C</p>
-            <p class="card-date">11/3</p>
-          
-        </div>
-      </div>
-      
-      <div class="input-group mb-3">
-       <form id="search-form" class="mb-3">
-         <div class="row">
-              <div class="col-7">
+            <div class="col-4">
+              <div class="stats">
+                <span class="date" id="nowDate">6/7</span>
+                <span class="time" id="nowTime">8:56</span>
+                <div class="highLow">18°C/24°</div>
+                <div class="weatherDescription">Sunny</div>
+              </div>
+            </div>
+          </div>
+
+          <h4 id="fiveday">5 day forecast</h4>
+          <div class="row forecast text-center" id="rowForecast">
+            <div class="col">
+              <h5 class="card-title">Sunny</h5>
+              <p class="card-text">18°C/24°C</p>
+              <p class="card-date">7/3</p>
+            </div>
+            <div class="col">
+              <h5 class="card-title">Sunny</h5>
+              <p class="card-text">18°C/24°C</p>
+              <p class="card-date">8/3</p>
+            </div>
+            <div class="col">
+              <h5 class="card-title">Sunny</h5>
+              <p class="card-text">18°C/24°C</p>
+              <p class="card-date">9/3</p>
+            </div>
+            <div class="col">
+              <h5 class="card-title">Sunny</h5>
+              <p class="card-text">18°C/24°C</p>
+              <p class="card-date">10/3</p>
+            </div>
+            <div class="col">
+              <h5 class="card-title">Sunny</h5>
+              <p class="card-text">18°C/24°C</p>
+              <p class="card-date">11/3</p>
+            </div>
+          </div>
+
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -106,30 +94,31 @@
                   autocomplete="off"
                 />
               </div>
-              <div class="col-4">
+              <div class="col-6">
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-200"
+                  class="btn btn-primary"
                   id="submitButton"
                 />
-              </div>
-              <div class="col-4">
                 <input
                   type="submit"
                   value="Current Location"
-                  class="btn btn-primary w-100"
+                  class="btn btn-primary"
                   id="currentLocation"
                 />
               </div>
-          </div>            
-       </form>  
-      </div>
+            </div>
+          </form>
 
-      <footer><a href="https://github.com/Abgold11/Weather-App-Abgold11">Open Sourced by Amanda Lapidot</a></footer>
+          <footer>
+            <a href="https://github.com/Abgold11/Weather-App-Abgold11"
+              >Open Sourced by Amanda Lapidot</a
+            >
+          </footer>
+        </div>
+      </div>
     </div>
-    </div>
-</div>
     <script src="src/script.js"></script>
   </body>
 </html>

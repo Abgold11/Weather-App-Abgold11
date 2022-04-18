@@ -4,7 +4,7 @@
   font-family: "Comfortaa", cursive;
 }
 .weather-app-wrapper {
-  padding-left: 5%;
+  padding: 15px;
   max-width: 600px;
   margin: 30px auto;
   background-image: url("andrea-ferrario-3WgPZbsDSkE-unsplash.jpg");
@@ -25,7 +25,6 @@ h1 {
 }
 
 .today {
-  width: 50%;
   font-size: 25px;
   font-weight: bold;
 }
@@ -63,20 +62,8 @@ h1 {
   font-weight: bold;
   color: black;
 }
-.col-2 {
-  margin-left: 2%;
-}
 .card {
   opacity: 0.8;
-}
-
-.forecast {
-  padding: 2% 4%;
-}
-.input-group {
-  width: 50%;
-  height: 50%;
-  padding-bottom: 2%;
 }
 .btn {
   font-size: 13px;
@@ -93,4 +80,8 @@ h1 {
 .tempChange {
   display: inline;
   font-size: 50%;
+}
+
+.card-text {
+  margin-bottom: 0.5rem;
 }
