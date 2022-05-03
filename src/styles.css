@@ -12,9 +12,18 @@
   background-size: cover;
 }
 
-.row {
+#fiveday {
   color: black;
   border-style: none;
+  text-align: center;
+  display: block;
+}
+
+.weather-forecast {
+  color: black;
+  border-style: none;
+  text-align: center;
+  display: block;
 }
 
 h1 {
