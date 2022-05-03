@@ -56,14 +56,18 @@ fahrenheit.addEventListener("click", celciusF);
 let convert = document.querySelector(".celcius");
 convert.addEventListener("click", fahrenheitC);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+  return days[day];
+}
 
 function displayForecast(response) {
-  function displayForecast(response) {
-  console.log(response.data.daily);
-  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.daily;
 
-  let days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
+  let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
